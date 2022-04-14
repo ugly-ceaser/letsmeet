@@ -1,0 +1,124 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    ViewBag.Title = "User Page";
+
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div  class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-11">
+            <div>
+                <img src="" class="d-block user-select-none" width="200" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle" />
+            </div>
+
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">User Name</strong>
+                    <small>11 contributions</small>
+
+                </div>
+                <div class="toast-body">
+                    I am A world Class Developer
+                </div>
+            </div>
+
+
+
+            <ul class="list-group mt-2 mb-2">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Followers
+                    <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Folowing
+                    <span class="badge bg-primary rounded-pill">2</span>
+                </li>
+
+            </ul>
+
+
+
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Member For</strong>
+                    <small>8 Days</small>
+
+                </div>
+                <div class="toast-body">
+                    Last Seen this Week
+                </div>
+
+                <div class="toast-header">
+                    <strong class="me-auto"></strong>
+                    <small>
+                        <button type="button" class="btn btn-outline-light">Edit Profile</button>
+                    </small>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-11  px-2">
+            <div class="d-flex">
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <h2>Top Questions</h2>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-sm-11 offset-6">
+
+                    <button type="button" class="btn btn-primary btn-sm">Ask Questions</button>
+                </div>
+
+            </div>
+
+            <div class="container mt-5 col-sm-12 col-md-12 col-lg-12  ">
+
+                <div class="btn-group d-inline" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-primary btn-sm">Interesting</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Hot</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Week</button>
+                    <button type="button" class="btn btn-outline-success btn-sm">Bountied</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Month</button>
+                </div>
+
+            </div>
+
+            <div class="d-flex mt-5 px-3">
+                <div class="col-lg-2 col-md-2 col-sm-11">
+
+                    <a>68<span> Votes</span></a>
+
+                    <button type="button" class="btn btn-outline-success btn-sm mb-2 mt-2">10 Answers</button>
+                    <br />
+                    <a>329k<span> Views</span></a>
+
+
+
+                </div>
+                <div class="col-10">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <a asp-controller="Users" asp-action="Answers" style="cursor:pointer; text-decoration:none; color:inherit;"> <h4 class="card-title">Title</h4></a>
+                            <h6 class="card-subtitle mb-2 text-muted">Author</h6>
+                            <a><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
+
+                            <button type="button" class="card-link btn btn-outline-warning btn-sm mb-2 mt-2">10 Answers</button>
+                           
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+
+</div>
