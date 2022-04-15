@@ -12,7 +12,7 @@
 
             <div class="col-md-3 col-lg-3 col-sm-11 offset-6">
 
-                <button type="button" class="btn btn-primary btn-sm">Ask Questions</button>
+               <a asp-controller="Home" asp-action="AskQuestion"> <button type="button" class="btn btn-primary btn-sm" >Ask Questions</button></a>
             </div>
 
         </div>
@@ -45,7 +45,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <a asp-controller="Users" asp-action="Answers" style="cursor:pointer; text-decoration:none; color:inherit;"> <h4 class="card-title">Title</h4></a>
+                        <a asp-controller="Users" asp-action="ViewAnswers" style="cursor:pointer; text-decoration:none; color:inherit;"> <h4 class="card-title">Title</h4></a>
                         <h6 class="card-subtitle mb-2 text-muted">Author</h6>
                         <a><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></a>
 

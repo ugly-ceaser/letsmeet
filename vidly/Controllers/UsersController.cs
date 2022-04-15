@@ -11,27 +11,33 @@ namespace vidly.Controllers
 {
     public class UsersController : Controller
     {
-        // GET: Movies/Random/
-        public IActionResult Register()
+
+
+        [Route("users/{int userId}")]
+        public IActionResult Index(int userId)
         {
-           return  View();
+            return View();
         }
 
         public IActionResult Login()
         {
-            return View();
+             return RedirectToAction("Index", "Users", new {UserId = "1"}); 
         }
 
-        public IActionResult Index()
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
+        [Route("answers")]
+        public IActionResult Answers(int? QuestionId, int? userId)
         {
             return View();
         }
 
 
-        public IActionResult Answers()
-        {
-            return View();
-        }
+       
+        
 
 
 

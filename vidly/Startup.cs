@@ -46,11 +46,23 @@ namespace vidly
 
             app.UseAuthorization();
 
+           
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapDefaultControllerRoute();
+
+
+                //endpoints.MapControllerRoute(
+                //    name: "AboutUs",
+                //    pattern: "About-us",
+                //    defaults: new { controller="Home", Action="About" });
+
+                //endpoints.MapControllerRoute(
+                //    name: "Team",
+                //    pattern: "Team",
+                //    defaults: new { controller = "Home", Action = "Team" });
             });
         }
     }

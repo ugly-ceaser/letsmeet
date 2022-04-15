@@ -23,13 +23,42 @@ namespace vidly.Controllers
             return View();
         }
 
+        [Route("Register")]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [Route("SignIn")]
+        public IActionResult SignInPage()
+        {
+            return View();
+        }
+
+        [Route("Team")]
         public IActionResult Team()
         {
             return View();
         }
 
+        public IActionResult AskQuestion(int? userId, int? QuestionId)
+        {
+            if (!userId.HasValue)
+                userId = null;
+
+            if (!QuestionId.HasValue)
+
+                QuestionId = null;
+                    return RedirectToAction("Index", "Users",new { userId, QuestionId });
+             
+                
+           
+            
+
+        }
 
 
+        [Route("About-us")]
         public IActionResult About()
         {
             return View();
