@@ -41,21 +41,7 @@ namespace vidly.Controllers
             return View();
         }
 
-        public IActionResult AskQuestion(int? userId, int? QuestionId)
-        {
-            if (!userId.HasValue)
-                userId = null;
-
-            if (!QuestionId.HasValue)
-
-                QuestionId = null;
-                    return RedirectToAction("Index", "Users",new { userId, QuestionId });
-             
-                
-           
-            
-
-        }
+       
 
 
         [Route("About-us")]
